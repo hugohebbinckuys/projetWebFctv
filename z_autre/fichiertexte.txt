@@ -1,0 +1,23 @@
+couleurs utilisées : 
+- rouge du fctv; 
+- gris : #dddfe6 ; 
+- gris foncé : 656565 ; 
+- blanc : #f4f5f9 ; 
+- noir : #252c41 (ou noir noir) 
+
+
+a modifier dans BDD : 
+- mettre un trigger dans la bdd pour ne pas pouvoir mettre autre chose que les trois rôles possibles (a voir prcq enft on peut juste faire une liste donc pas obligé enft)
+
+
+ne pas oublier dans css : 
+- le mode cursor pour que ce soit la main quand on passe au dessus d'un lien ou d'un input type submits
+
+ne pas oublier dans requetes dans php : 
+- securite des entrées !!!! 
+
+
+
+PROCHAINE FOIS : 
+- refaire bdd pour que ca soit en InnoDB et clean 
+- avancer sur le php 

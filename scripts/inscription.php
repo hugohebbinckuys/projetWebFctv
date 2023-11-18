@@ -1,19 +1,25 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fctv</title> <!-- ajouter image du fctv dans le titre comme j'avais vu sur youtube --> 
-    <link rel="icon" type="image/jpg" href="logoFctv.jpg"> <!-- marche pas --> 
-</head>
+<?php 
+session_start();
+require("header.php");
+?> 
+
 <body>
-    <nav class="navbar-accueil"> 
-        <ul> 
-            <li> 1963 </li> 
-            <li> <img src="" alt="fctv" class="logo-navbar"> </a> </li> 
-            <li> <a> se connecter </a> </li> 
-        </ul> 
-    </nav> 
+    <header> 
+        <nav class="navbar-accueil"> 
+            <ul> 
+                <li> <a href=""> <img src="../images/logo_fctv_b&w.png" alt="petit logo fctv" class="petit_logo-navbar"> </a> </li> 
+                <li> <a href=""> <img src="../images/logo_fctv.png" alt="logo fctv" class="logo-navbar"> </a> </li> 
+                <li> <a href=""> à propos </a> </li>
+                <li> <a href="accueil_connexion.php"> se connecter </a> </li>
+                <li> / </li> 
+                <li> <a href="inscription.php"> s'inscrire </a> </ li>  
+            </ul> 
+        </nav> 
+    </header> 
+
+    <div class="img_fond"> 
+        <img src="" alt="image de l'équipe">
+    </div>
 
     <div class="bienvenu">
         <h2> Bienvenu au Football Club Templemars Vendeville </h2>   
@@ -31,7 +37,7 @@
                 </div>
                 <div>
                     <label for=""> prenom </label>
-                    <input type="text" name="prenom">
+                    <input type="text" name="prenom">       
                 </div>
                 <div>
                     <label for=""> pseudo </label>
@@ -48,11 +54,16 @@
                 <div> 
                     <input type="submit" value="s'inscrire">
                 </div>
+                <div>
+                    <a href="accueil_connexion.php"> Deja un compte ? Connectez-vous </a> 
+                </div>
                 </legend> 
             </fieldset> 
         </form> 
     </div> 
 
+    <br>
 
-</body>
-</html>
+<?php
+require("footer.php");
+?> 
